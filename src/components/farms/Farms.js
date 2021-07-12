@@ -5,7 +5,6 @@ import ToggleSwitch from "../elements/toggle-switch/ToggleSwitch";
 import CardsSection from "./section/CardSection";
 import { slice, concat } from "lodash";
 import * as FaIcons from "react-icons/fa";
-import MetaDecorator from "../elements/MetaDecorator";
 
 export default function Farms() {
   const { farm } = useParams();
@@ -64,14 +63,15 @@ export default function Farms() {
           </div>
           <div className="card items-center text-center w-full mt-16">
             {checked && <CardsSection itemsToRender={list}/>}
-            {!checked && "No Farm Data Found"}
-            
-           
-            {showMore && 
+            {showMore && checked && 
               <button onClick={loadMore} className="flex items-center justify-center mx-auto mt-8 text-md space-x-4 hover:text-red-rasta"> 
               <FaIcons.FaChevronCircleDown/>
               <span>Load More</span> </button>
             }
+            {!checked && "No Farm Data Found"}
+            
+           
+           
           </div>
         </div>
       </div>

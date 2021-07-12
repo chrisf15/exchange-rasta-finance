@@ -11,6 +11,9 @@ import parse from "html-react-parser";
 import MrRastaImage from "../assets/lion-mr-rasta.jpg";
 import MrsRastaImage from "../assets/lion-mrs-rasta.jpg";
 import BinanceLogo from "../assets/Binance-Icon-Logo.svg";
+import AboutHeader from "../assets/aboutHero.jpg";
+import BurdyProfile from "../assets/senor-burdy.png";
+import EvoProfile from "../assets/senor-evo.png";
 
 export default {
   navbar: {
@@ -25,7 +28,7 @@ export default {
       },
       {
         label: "About",
-        path: "#",
+        path: "/about",
         icon: <RiIcons.RiErrorWarningFill className="inline-block" />,
         parent: false,
         child: [],
@@ -177,8 +180,7 @@ export default {
                   unlockWalletLink: "/",
                   stake: "Total Liquidity",
                   value: "47,581",
-                  bscLink : "/",
-
+                  bscLink: "/",
                 },
               },
               {
@@ -260,7 +262,7 @@ export default {
           },
         },
       },
-     
+
       mrs_rasta: {
         name: "mr-rasta",
         page: {
@@ -284,8 +286,7 @@ export default {
                   unlockWalletLink: "/",
                   stake: "Total Liquidity",
                   value: "47,581",
-                  bscLink : "/",
-
+                  bscLink: "/",
                 },
               },
               {
@@ -413,6 +414,74 @@ export default {
         },
       },
     },
+  },
+  about: {
+    heroSection: {
+      image: AboutHeader,
+      title: parse("About Us"),
+      desc: "We are a big team with an even bigger heart.",
+      button: {
+        link: "#",
+        label: "Read The Docs",
+      },
+    },
+    cardSection: [
+      {
+        icon: <AiIcons.AiFillQuestionCircle />,
+        title: "What’s Rasta?",
+        desc: `The precious $RASTA token is the official Token of the RastaFinance eco-system. 
+      Through its decentralized exchange (DEX) and architecture, RastaFinance is putting the people's money, back into the people's hands `,
+      },
+      {
+        icon: <FaIcons.FaLink />,
+        title: "Connect Directly to Your Wallet",
+        desc: `The Rasta.Finance platform connects straight to your smart chain wallet, 
+      in order to ensure swift interaction with our DeFi protocols. Please find the guide on connecting your Binance Smart Chain (BSC) enabled wallet. `,
+      },
+      {
+        icon: <FaIcons.FaUsers />,
+        title: "Join a Community that Cares",
+        desc: `Farming the $RASTA token involves staking your coins to provide liquidity for the 
+      RastaDEX. By a whole community doing this together, we grow the community and make it easier for new Rastas to join`,
+      },
+    ],
+    descSection:
+      parse(`<p>What started as a dream, has caught on fire and spread without control. The vision of RastaFinance can no longer be caged, 
+    it has been decentralized and distributed to all corners of the world.</p>
+    <p>We value transparency, love, compassion and camaraderie above all else. We stand strong as ONE, as we are determined to re-gain
+     the power of our own money, taking it back from the institutions and exploiters that have kept us apart.</p>
+    
+    <p>So connect your browser-based wallet, and join the Decentralized REVOLUTION!</p>`),
+    cardBtnItem: [
+      { label: parse("Rasta<br>Token"), link: "#" },
+      { label: parse("MRasta<br>Token"), link: "#" },
+      { label: parse("Factory<br>Address"), link: "#" },
+      { label: parse("Router<br>Address"), link: "#" },
+      { label: parse("Bouyancy<br>Fund Address"), link: "#" },
+      { label: parse("Rasta <br>Trust Fund <br>Address"), link: "#" },
+    ],
+    team:[
+      {
+        name:parse('@SeñorBurdy'),
+        position:parse('Founder & CEO'),
+        avatar: <BurdyProfile/>
+      },
+      {
+        name:parse('@SeñorEVO'),
+        position:parse('Position'),
+        avatar: <EvoProfile/>
+      },
+      {
+        name:parse('@SeñorEVO'),
+        position:parse('Position'),
+        avatar: <EvoProfile/>
+      },
+      {
+        name:parse('@SeñorEVO'),
+        position:parse('Position'),
+        avatar: <EvoProfile/>
+      },
+    ]
   },
   footer: {
     logo: Logo,
