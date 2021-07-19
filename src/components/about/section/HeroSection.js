@@ -5,7 +5,7 @@ export default function HeroSection(props) {
   return (
     <div>
       <div
-        className="flex w-full text-black flex-col bg-cover bg-blend-overlay bg-black bg-opacity-25  bg-top text-white py-16 items-center pt-40 pb-64"
+        className="flex w-full flex-col bg-cover bg-blend-overlay bg-black bg-opacity-25  bg-top text-white py-16 items-center pt-40 pb-64"
         style={{
           backgroundImage: "url(" + props.images + ")",
           backgroundSize: "cover",

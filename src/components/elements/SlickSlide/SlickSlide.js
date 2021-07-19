@@ -3,42 +3,43 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "react-slick";
 
 export default class MultipleSlick extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            sliders: props.items
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      sliders: props.items,
+    };
+  }
 
-    sliders() {
-        return this.state.sliders.map((item,index) => {
-            return (
-                <div key={index} className="flex-imp flex-col w-full items-center content-center justify-center">
-                   <LazyLoadImage
-              src={item.avatar.type}
-              alt="Logo"
-              className={`w-full mx-auto`}
-              effect="blur"
-            />
-                    <h2>{item.name}</h2>
-                </div>
-            )
-        });
-    }
+  sliders() {
+    return this.state.sliders.map((item, index) => {
+      return (
+        <div
+          key={index}
+          className="flex-imp py-16 flex-col w-full items-center content-center justify-center shadow-md bg-white"
+        >
+          <LazyLoadImage
+            src={item.avatar.type}
+            alt="Logo"
+            className={`w-full mx-auto`}
+            effect="blur"
+          />
+          <h2 className="mt-8 font-bold text-xl">{item.name}</h2>
+          <h3 className="mt-4 text-md">{item.position}</h3>
+        </div>
+      );
+    });
+  }
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
-    console.log(this.state);
     return (
       <div className="text-black">
-        <Slider {...settings}>
-                    {this.sliders()}
-                </Slider>
+        <Slider {...settings}>{this.sliders()}</Slider>
       </div>
     );
   }

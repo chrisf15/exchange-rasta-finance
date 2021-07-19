@@ -35,7 +35,7 @@ export default {
       },
       {
         label: "Trade",
-        path: "#",
+        path: "/trade",
         icon: <IoIcons.IoIosSwap className="inline-block" />,
         parent: false,
         child: [],
@@ -120,7 +120,7 @@ export default {
       },
       {
         label: "Contact",
-        path: "#",
+        path: "/contact/",
         icon: <FaIcons.FaPhone className="inline-block transform rotate-90" />,
         parent: false,
         child: [],
@@ -481,8 +481,107 @@ export default {
         position:parse('Position'),
         avatar: <EvoProfile/>
       },
-    ]
-  },
+    ],
+    letsConnect : {
+      heading:'Rasta.Finance',
+      subHeading: parse('Let\'s connect and get <br>to know each other'),
+      listContent : ['Decentralized','Community Driven','For The People.','By The People.'],
+      textContent : `Best way to get in touch with us is to join the Telegram community, our admins are from all over the world and we are ready to answer any questions you may have.`,
+      link: {
+        btn: {
+          joinNowLink : '#',
+          farmRastaLink : '#',
+        },
+        social: [
+        {
+          icon: <FaIcons.FaTwitter/>,
+          link:'#'
+        },
+        {
+          icon: <FaIcons.FaTelegramPlane/>,
+          link:'#'
+        },
+        {
+          icon: <Io5Icons.IoLogoTiktok/>,
+          link:'#'
+        },
+        {
+          icon: <FaIcons.FaMediumM/>,
+          link:'#'
+        },
+      ]
+      }
+    },
+    },
+    trades: {
+      heading: {
+        title:'Swap and Exchange',
+      },
+      content: {
+        title:'Stake Liquidity Pool Tokens',
+        subTitle: 'Earn Brand New Rasta Tokens'
+      }
+    },
+    contact:{
+      heading:{
+        title:'Contact Us',
+        desc: parse(`Feel free to contact us any time<br>Let’s make some magic together!`)
+      },
+      forms:{
+        fields: [
+          {
+          name:'name',
+          type:'text',
+          placeholder:'Name'
+        },
+        {
+        name:'email',
+        type:'email',
+        placeholder:'Email'
+      },
+      {
+      name:'message',
+      type:'textarea',
+      placeholder:'Message'
+    },
+      ],
+      },
+      contactInfo: {
+        title: 'Contact Info',
+        detail : [{
+          icon:<IoIcons.IoIosPhonePortrait/>,
+          text:'00-0000-000',
+          link:'tel:00-0000-000'
+        },
+        {
+          icon:<FaIcons.FaRegEnvelope/>,
+          text:'loremipsum@rasta.finance',
+          link:'mailto:loremipsum@rasta.finance'
+        }
+      ],
+
+      socialMedia : [
+        {
+          icon: <FaIcons.FaTwitter/>,
+          link:'#'
+        },
+        {
+          icon: <FaIcons.FaTelegramPlane/>,
+          link:'#'
+        },
+        {
+          icon: <Io5Icons.IoLogoTiktok/>,
+          link:'#'
+        },
+        {
+          icon: <FaIcons.FaMediumM/>,
+          link:'#'
+        },
+      ]
+      },
+      
+    },
+    
   footer: {
     logo: Logo,
     textUnderLogo: ["@rastafinance", "www.rasta.finance"],

@@ -7,6 +7,9 @@ import Farms from "./components/farms/Farms";
 import About from "./components/about/About";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Contact from "./components/contact/Contact";
+import Trades from "./components/trades/Trades";
+
 function App() {
   return (
     <Router>
@@ -17,6 +20,8 @@ function App() {
         </Route>
         <Route path="/farms/:farm" component={Farms}></Route>
         <Route exact path="/about" component={About}></Route>
+        <Route exact path="/trade" component={Trades}></Route>
+        <Route exact path="/contact" component={Contact}></Route>
       </Switch>
       <Footer />
     </div>

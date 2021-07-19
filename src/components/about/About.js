@@ -5,6 +5,8 @@ import Card from './section/CardSection';
 import Dsc from './section/DescriptionSection';
 import CardButton from './section/CardButton';
 import TeamSlide from './section/TeamSlide';
+import LetsConnect from './section/LetsConnect';
+import LeafBg from "../../assets/leaf-bg.jpg"
 
 export default function About() {
     const data = DataBank.about;
@@ -24,8 +26,12 @@ export default function About() {
                 <CardButton items={data.cardBtnItem}/>
             </section>
             
-            <section className=" w-full bg-white md:mx-auto items-center items-center py-16">
+            <section className=" w-full bg-white md:mx-auto items-center items-center pt-16">
                 <TeamSlide items={data.team}/>
+            </section>
+
+            <section className=" w-full flex bg-white md:mx-auto items-center items-center md:flex-row -mt-64">
+                <LetsConnect items={data.letsConnect} bg={LeafBg}/>
             </section>
         </div>
     )
