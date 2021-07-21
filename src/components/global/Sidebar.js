@@ -45,7 +45,7 @@ export default function Sidebar() {
       </div>
       <nav
         className={
-          "h-screen w-auto top-0 py-6 px-8 bg-gray-rasta absolute transition duration-1000 " +
+          "h-screen w-auto top-0 py-6 px-8 bg-gray-rasta z-50 absolute transition duration-1000 " +
           (sidebar ? "left-0" : "-left-full")
         }
       >

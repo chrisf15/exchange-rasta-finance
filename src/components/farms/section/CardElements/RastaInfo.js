@@ -4,7 +4,7 @@ import * as FaIcons from "react-icons/fa";
 export default function RastaInfo(props) {
     return (
         <div>
-            <div className="row flex flex-row gap-12 mb-12">
+            <div className="row flex flex-col md:flex-row gap-12 mb-12">
               <div className="items-detail flex flex-col border-b-2 pb-2 border-black flex-grow-1">
                 <h2 className="text-3xl font-bold text-left">{props.farmName}</h2>
                 <div className="coin-info flex  items-center">

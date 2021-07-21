@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <div className="w-full bg-black text-white py-12">
       <div className="mx-auto w-10/12">
-        <div className="flex flex-row space-between border-b-1 pb-8 mb-4">
+        <div className="flex flex-col md:flex-row space-between border-b-1 pb-8 mb-4">
           <div className="flex-grow-1 flex flex-col">
             <LazyLoadImage
               src={DataBank.footer.logo}
@@ -38,7 +38,10 @@ export default function Footer() {
           </div>
           {DataBank.footer.navigation.map((item, index) => {
             return (
-              <div className="flex flex-col mr-4 last:mr-0" key={index}>
+              <div
+                className="flex flex-col mr-4 last:mr-0 pl-6 md:pl-0 mt-4"
+                key={index}
+              >
                 {item.title}
                 <Router>
                   <ul className="list-none mt-6 text-yellow-rasta">
@@ -50,18 +53,26 @@ export default function Footer() {
           })}
         </div>
 
-        <div className="bottom-footer flex space-between flex-row w-full space-between mx-auto">
+        <div className="bottom-footer flex space-between pl-6 md:pl-0 pr-6 md:pr-0 flex-col md:flex-row w-full space-between mx-auto">
           <div className="copyright flex-grow-1">
             <span>{DataBank.footer.copyRight}</span>
           </div>
-          <div className="social-media text-right justify-items-end">
-              <div className="flex flex-row  space-x-4">
-                  <Router>
-              {DataBank.socialMedia.map((item,index)=> {
-                  return (<Link className="text-md w-50 h-50 border-1 border-white rounded-full p-2 hover:bg-yellow-rasta hover:text-green-rasta" key={index} to={item.link}>{item.icon}</Link>)
-              })}
+          <div className="social-media text-left md:text-right justify-items-end">
+            <div className="md:flex md:flex-row md:space-x-4 gap-4 md:gap-0 mt-4">
+              <Router>
+                {DataBank.socialMedia.map((item, index) => {
+                  return (
+                    <Link
+                      className=" inline-block md:block mr-5 last:mr-0 md:mr-0 text-md w-50 h-50 border-1 border-white rounded-full p-2 hover:bg-yellow-rasta hover:text-green-rasta"
+                      key={index}
+                      to={item.link}
+                    >
+                      {item.icon}
+                    </Link>
+                  );
+                })}
               </Router>
-              </div>
+            </div>
           </div>
         </div>
       </div>

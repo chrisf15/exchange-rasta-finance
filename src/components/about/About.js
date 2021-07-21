@@ -13,24 +13,21 @@ export default function About() {
     return (
         <div>
         <Header images={data.heroSection.image} title={data.heroSection.title} desc={data.heroSection.desc} btn={data.heroSection.button}/>
-            <section className=" w-full flex bg-white md:mx-auto items-center items-center md:flex-row  pb-8">
+            <section className=" w-full flex bg-white md:mx-auto items-center px-8 md:px-0 md:flex-row  pb-8">
                 <Card items={data.cardSection}/>
             </section>
-            <section className=" w-full flex bg-white md:mx-auto items-center items-center md:flex-row py-16">
+            <section className=" w-full flex bg-white md:mx-auto items-center px-8 md:px-0 md:flex-row py-8 md:py-16">
                 <Dsc text={data.descSection}/>
             </section>
-            <section className=" w-full flex bg-white md:mx-auto items-center items-center md:flex-row py-16">
-                <Dsc text={data.descSection}/>
-            </section>
-            <section className=" w-full flex bg-white md:mx-auto items-center items-center md:flex-row py-16">
+            <section className=" w-full flex bg-white md:mx-auto items-center px-8 md:px-0 md:flex-row py-8 md:py-16">
                 <CardButton items={data.cardBtnItem}/>
             </section>
             
-            <section className=" w-full bg-white md:mx-auto items-center items-center pt-16">
+            <section className=" w-full bg-white md:mx-auto items-center  md:pt-16">
                 <TeamSlide items={data.team}/>
             </section>
 
-            <section className=" w-full flex bg-white md:mx-auto items-center items-center md:flex-row -mt-64">
+            <section className=" w-full flex bg-white md:mx-auto items-center md:flex-row -mt-64 ">
                 <LetsConnect items={data.letsConnect} bg={LeafBg}/>
             </section>
         </div>

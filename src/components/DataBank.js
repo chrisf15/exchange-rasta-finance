@@ -135,7 +135,9 @@ export default {
       title: parse(
         "<span class='text-yellow-rasta'>Pride and Joy</span><br> of the Binance Smart Chain"
       ),
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostdeserunt",
+      desc: parse(`Join thousands of Rastas on a journey to ZION. RastaFinance is decentralizing finance, 
+      using the latest in blockchain technology. Seize the power of your own money, 
+      join the revolution.`),
       counter: [
         { label: "Counter", numbers: "3256" },
         { label: "Holders", numbers: "56879" },
@@ -146,9 +148,9 @@ export default {
     community: {
       image: CommunityImage,
       title: "Join The Community That Cares",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-      nostdeserunt`,
+      desc: parse(`Built by the very same people that <br>
+make up this loving community. <br>
+Powered by the People!`),
     },
     favCreator: {
       title: parse(`Interact with Your Favorite Creators.<br>

@@ -20,7 +20,6 @@ function App() {
         </Route>
         <Route path="/farms/:farm" component={Farms}></Route>
         <Route exact path="/about" component={About}></Route>
-        <Route exact path="/trade" component={Trades}></Route>
         <Route exact path="/contact" component={Contact}></Route>
       </Switch>
       <Footer />
