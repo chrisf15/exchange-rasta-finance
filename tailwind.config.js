@@ -33,6 +33,7 @@ module.exports = {
         800: '#2d3748',
         900: '#1a202c',
         rasta: '#231F20',
+        inBlack: "#444444",
       },
       red: {
         100: '#fff5f5',

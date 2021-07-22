@@ -14,8 +14,46 @@ import BinanceLogo from "../assets/Binance-Icon-Logo.svg";
 import AboutHeader from "../assets/aboutHero.jpg";
 import BurdyProfile from "../assets/senor-burdy.png";
 import EvoProfile from "../assets/senor-evo.png";
+import BinanceWallet from "../assets/wallet/binance-wallet.png";
+import MathWallet from "../assets/wallet/math-wallet.png";
+import MetaMask from "../assets/wallet/meta-mask.png";
+import TokenPocket from "../assets/wallet/token-pocket.png";
+import TrustWallet from "../assets/wallet/trust-wallet.png";
+import WalletConnect from "../assets/wallet/wallet-connect.png";
 
 export default {
+  wallet : [
+    {
+      name:"Metamask",
+      icon:<MetaMask/>,
+      link:"#"
+    },
+    {
+      name:"TrustWallet",
+      icon:<TrustWallet/>,
+      link:"#"
+    },
+    {
+      name:"MathWallet",
+      icon:<MathWallet/>,
+      link:"#"
+    },
+    {
+      name:"TokenPocket",
+      icon:<TokenPocket/>,
+      link:"#"
+    },
+    {
+      name:"WalletConnect",
+      icon:<WalletConnect/>,
+      link:"#"
+    },
+    {
+      name:"Binance Chain",
+      icon:<BinanceWallet/>,
+      link:"#"
+    },
+  ],
   navbar: {
     logo: Logo,
     menu: [
@@ -470,17 +508,12 @@ Powered by the People!`),
       },
       {
         name:parse('@SeñorEVO'),
-        position:parse('Position'),
+        position:parse('RastaOperations'),
         avatar: <EvoProfile/>
       },
       {
-        name:parse('@SeñorEVO'),
-        position:parse('Position'),
-        avatar: <EvoProfile/>
-      },
-      {
-        name:parse('@SeñorEVO'),
-        position:parse('Position'),
+        name:parse('@typhoncrypto'),
+        position:parse('RastaDevelopment'),
         avatar: <EvoProfile/>
       },
     ],
