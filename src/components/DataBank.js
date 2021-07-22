@@ -624,17 +624,16 @@ Powered by the People!`),
       {
         title: "Useful Links",
         item: [
-          { label: "Rasino", path: "#" },
-          { label: "Zion", path: "#" },
+          { label: "About", path: "/about" },
+          { label: "Contact", path: "/contact" },
           { label: "Farms", path: "#" },
         ],
       },
       {
-        title: "Lorem Ipsum",
+        title: "Farms",
         item: [
-          { label: "Rasino", path: "#" },
-          { label: "Zion", path: "#" },
-          { label: "Farms", path: "#" },
+          { label: "Mr. Rasta", path: "/farms/mr-rasta" },
+          { label: "Mrs. Rasta", path: "/farms/mrs-rasta" },
         ],
       },
     ],

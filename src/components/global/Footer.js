@@ -43,11 +43,9 @@ export default function Footer() {
                 key={index}
               >
                 {item.title}
-                <Router>
                   <ul className="list-none mt-6 text-yellow-rasta">
                     <ShowLinks items={item.item} />
                   </ul>
-                </Router>
               </div>
             );
           })}
@@ -59,7 +57,6 @@ export default function Footer() {
           </div>
           <div className="social-media text-left md:text-right justify-items-end">
             <div className="md:flex md:flex-row md:space-x-4 gap-4 md:gap-0 mt-4">
-              <Router>
                 {DataBank.socialMedia.map((item, index) => {
                   return (
                     <Link
@@ -71,7 +68,6 @@ export default function Footer() {
                     </Link>
                   );
                 })}
-              </Router>
             </div>
           </div>
         </div>
